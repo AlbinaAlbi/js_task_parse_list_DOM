@@ -9,7 +9,7 @@ function sortList(list) {
 
   const sortedItems = items.sort((a, b) => {
     const elementA = parseSalary(a.getAttribute('data-salary'));
-    const elementB = parseSalary(a.getAttribute('data-salary'));
+    const elementB = parseSalary(b.getAttribute('data-salary'));
 
     return elementB - elementA;
   });
